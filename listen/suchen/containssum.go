@@ -9,11 +9,6 @@ func ContainsSum(list []int) bool {
 		return false
 	}
 	counter := list[0] + list[1] + list[2]
-	// Verwenden Sie eine for-Schleife, um die Elemente der Liste zu durchlaufen.
-	// In jedem Schleifendurchlauf addieren Sie das aktuelle Element zur Summe hinzu
-	// und ziehen das Element, das drei Positionen vor dem aktuellen Element steht,
-	// von der Summe ab.
-	// Wenn die Summe 42 ist, geben Sie true zurück.
 	// TODO
 	return counter == 42
 }

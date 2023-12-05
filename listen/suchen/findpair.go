@@ -9,9 +9,6 @@ func FindPair(list []int, x int) int {
 	if len(list) < 2 {
 		return -1
 	}
-
-	// Gehen Sie ähnlich vor wie in der Funktion Find.
-	// Ändern Sie lediglich die Bedingung in der if-Anweisung.
 	// TODO
 	return -1
 }

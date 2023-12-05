@@ -4,8 +4,6 @@ package suchen
 // Liefert die Position der ersten negativen Zahl in der Liste.
 // Liefert -1, falls keine negative Zahl enthalten ist.
 func FindNegative(list []int) int {
-	// Gehen Sie ähnlich vor wie in der Funktion Find.
-	// Ändern Sie lediglich die Bedingung in der if-Anweisung.
 	// TODO
 	return -1
 }
