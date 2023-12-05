@@ -8,13 +8,7 @@ func ContainsMultiple(list []int, x int) bool {
 	// Prüfen Sie in jedem Schleifendurchlauf, ob das aktuelle Element gleich x ist.
 	// Wenn ja, erhöhen Sie die Variable counter um 1.
 	// Wenn der counter größer als 1 wird, geben Sie true zurück (vorzeitiger Abbruch der Funktion).
-	for _, el := range list {
-		if el == x {
-			counter++
-			if counter > 1 {
-				return true
-			}
-		}
-	}
+	// TODO
+	_ = counter // Entfernen Sie diese Zeile, wenn Sie die Variable counter verwenden.
 	return false
 }

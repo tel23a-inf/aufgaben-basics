@@ -17,15 +17,7 @@ func ContainsChain(list []int) bool {
 	// Wenn dabei counter >= 3 wird, geben Sie true zurück.
 	// Wenn Sie die Schleife durchlaufen haben, ohne eine Kette gefunden zu haben,
 	// geben Sie false zurück.
-	for pos, el := range list[:len(list)-1] {
-		if el == list[pos+1]-1 {
-			counter++
-		} else {
-			counter = 1
-		}
-		if counter >= 3 {
-			return true
-		}
-	}
+	// TODO
+	_ = counter // Entfernen Sie diese Zeile, wenn Sie die Variable counter verwenden.
 	return false
 }

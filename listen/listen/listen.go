@@ -20,11 +20,7 @@ func CountGreaterThan(list []int, n int) int {
 	// Verwenden Sie eine for-Schleife, um die Elemente der Liste zu durchlaufen.
 	// Prüfen Sie in jedem Schleifendurchlauf, ob das aktuelle Element größer als n ist.
 	// Wenn ja, erhöhen Sie die Variable result um 1.
-	for _, element := range list {
-		if element > n {
-			result++
-		}
-	}
+	// TODO
 	return result
 }
 
@@ -36,11 +32,7 @@ func CountNotN(list []int, n int) int {
 	// Prüfen Sie in jedem Schleifendurchlauf, ob das aktuelle Element ungleich n ist.
 	// Wenn ja, erhöhen Sie die Variable result um 1.
 	// Anmerkung: Das ist beinahe die gleiche Aufgabe wie CountGreaterThan().
-	for _, element := range list {
-		if element != n {
-			result++
-		}
-	}
+	// TODO
 	return result
 }
 
@@ -50,11 +42,7 @@ func CountDivisors(list []int, n int) int {
 	result := 0
 	// Auch diese Aufgabe ist sehr ähnlich zu den beiden vorherigen.
 	// Um Teilbarkeit zu prüfen, können Sie den %-Operator ("Modulo") verwenden.
-	for _, element := range list {
-		if element%n == 0 {
-			result++
-		}
-	}
+	// TODO
 	return result
 }
 
@@ -70,19 +58,11 @@ func CountEqualElements(list1, list2 []int) int {
 	// ob der aktuelle Index kleiner ist als die Länge der zweiten Liste.
 	// Nur dann kann auch auf das Element der zweiten Liste zugegriffen werden.
 	for i := range list1 {
-		if i < len(list2) && list1[i] == list2[i] {
-			result++
-		}
-	}
-	return result
-	/**iftask:
-	for i := range list1 {
 		if list1[i] == list2[i] {
 			result++
 		}
 	}
 	return result
-	**/
 }
 
 // Erwartet zwei Listen.
@@ -92,10 +72,6 @@ func CountEqualElements(list1, list2 []int) int {
 func CountGreaterElements(list1, list2 []int) int {
 	result := 0
 	// Gehen Sie ähnlich vor wie in CountEqualElements().
-	for i := range list1 {
-		if i < len(list2) && list1[i] > list2[i] {
-			result++
-		}
-	}
+	// TODO
 	return result
 }

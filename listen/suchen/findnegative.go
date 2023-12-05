@@ -6,10 +6,6 @@ package suchen
 func FindNegative(list []int) int {
 	// Gehen Sie ähnlich vor wie in der Funktion Find.
 	// Ändern Sie lediglich die Bedingung in der if-Anweisung.
-	for pos, el := range list {
-		if el < 0 {
-			return pos
-		}
-	}
+	// TODO
 	return -1
 }

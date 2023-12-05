@@ -203,10 +203,6 @@ func Zip(s1, s2 string) string {
 	// an den result-String an.
 	// Am Ende der Schleife müssen Sie noch die restlichen Buchstaben des längeren
 	// Strings an den result-String anhängen.
-	for i := 0; i < min; i++ {
-		result += string(s1[i]) + string(s2[i])
-	}
-	result += s1[min:]
-	result += s2[min:]
+	// TODO
 	return result
 }

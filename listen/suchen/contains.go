@@ -7,10 +7,6 @@ func Contains(list []int, x int) bool {
 	// Prüfen Sie in jedem Schleifendurchlauf, ob das aktuelle Element gleich x ist.
 	// Wenn ja, geben Sie true zurück (vorzeitiger Abbruch der Funktion).
 	// Wenn Sie die Schleife durchlaufen haben, ohne x gefunden zu haben, geben Sie false zurück.
-	for _, el := range list {
-		if el == x {
-			return true
-		}
-	}
+	// TODO
 	return false
 }

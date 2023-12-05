@@ -14,12 +14,6 @@ func ContainsSum(list []int) bool {
 	// und ziehen das Element, das drei Positionen vor dem aktuellen Element steht,
 	// von der Summe ab.
 	// Wenn die Summe 42 ist, geben Sie true zurück.
-	for pos, el := range list[3:] {
-		if counter == 42 {
-			return true
-		}
-		counter += el
-		counter -= list[pos]
-	}
+	// TODO
 	return counter == 42
 }

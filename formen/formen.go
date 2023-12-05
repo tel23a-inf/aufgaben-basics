@@ -1,23 +1,16 @@
 package formen
 
-import "fmt"
-
 // PrintRow erwartet eine Zahl n und gibt eine Zeile mit n Sternen auf die Konsole aus.
 func PrintRow(n int) {
 	// Benutzen Sie eine for-Schleife, um n-mal ein Sternchen auszugeben.
-	for i := 0; i < n; i++ {
-		fmt.Print("*")
-	}
-	fmt.Println()
+	// TODO
 }
 
 // PrintSquare erwartet eine Zahl n und gibt ein Quadrat der Seitenlänge n auf die Konsole aus.
 // Das Quadrat soll mit Hilfe des Zeichens "*" gezeichnet werden.
 func PrintSquare(n int) {
 	// Benutzen Sie die Funktion PrintRow() in einer for-Schleife.
-	for i := 0; i < n; i++ {
-		PrintRow(n)
-	}
+	// TODO
 }
 
 // PrintEmptyRow erwartet eine Zahl n und gibt eine Zeile auf die Konsole aus,
@@ -25,11 +18,7 @@ func PrintSquare(n int) {
 func PrintEmptyRow(n int) {
 	// Benutzen Sie eine for-Schleife, um n-2-mal ein Leerzeichen auszugeben.
 	// Geben Sie davor und danach jeweils ein Sternchen aus.
-	fmt.Print("*")
-	for i := 0; i < n-2; i++ {
-		fmt.Print(" ")
-	}
-	fmt.Println("*")
+	// TODO
 }
 
 // PrintEmptySquare erwartet eine Zahl n und gibt ein Quadrat der Seitenlänge n auf die Konsole aus.
@@ -38,11 +27,7 @@ func PrintEmptyRow(n int) {
 func PrintEmptySquare(n int) {
 	// Benutzen Sie die Funktion PrintEmptyRow() in einer for-Schleife.
 	// Rufen Sie vorher und nachher jeweils einmal PrintRow() auf.
-	PrintRow(n)
-	for i := 0; i < n-2; i++ {
-		PrintEmptyRow(n)
-	}
-	PrintRow(n)
+	// TODO
 }
 
 // PrintCustomRow erwartet eine Zahl n sowie zwei Strings border und fill.
@@ -54,11 +39,7 @@ func PrintCustomRow(n int, border, fill string) {
 	// sondern verwenden die Parameter border und fill.
 	// Anmerkung: Wenn diese Funktion fertig ist, können Sie PrintEmptyRow()
 	// mit PrintCustomRow() implementieren.
-	fmt.Print(border)
-	for i := 0; i < n-2; i++ {
-		fmt.Print(fill)
-	}
-	fmt.Println(border)
+	// TODO
 }
 
 // PrintCustomSquare erwartet eine Zahl n und gibt ein Quadrat der Seitenlänge n auf die Konsole aus.
@@ -66,11 +47,7 @@ func PrintCustomRow(n int, border, fill string) {
 func PrintCustomSquare(n int, border, fill string) {
 	// Benutzen Sie die Funktion PrintCustomRow() in einer for-Schleife,
 	// ähnlich wie in PrintEmptySquare().
-	PrintCustomRow(n, border, border)
-	for i := 0; i < n-2; i++ {
-		PrintCustomRow(n, border, fill)
-	}
-	PrintCustomRow(n, border, border)
+	// TODO
 }
 
 // Erwartet zwei Zahlen m und n und gibt ein Rechteck
@@ -78,9 +55,7 @@ func PrintCustomSquare(n int, border, fill string) {
 // Das Rechteck soll mit dem Zeichen "*" ausgefüllt sein.
 func PrintRectangle(m, n int) {
 	// Gehen Sie analog zu PrintSquare() vor.
-	for i := 0; i < n; i++ {
-		PrintRow(m)
-	}
+	// TODO
 }
 
 // Erwartet eine Zahl n und gibt ein Dreieck auf die Konsole aus.
@@ -93,7 +68,5 @@ func PrintTriangle(n int) {
 	// Als Argument für PrintRow() müssen Sie die Anzahl der Sterne
 	// übergeben, die in der jeweiligen Zeile ausgegeben werden sollen.
 	// Dies sollte die Laufvariable der for-Schleife sein.
-	for i := n; i > 0; i-- {
-		PrintRow(i)
-	}
+	// TODO
 }
