@@ -78,7 +78,6 @@ func NextPrime(n int) int {
 // * k ist eine Primzahl
 // * k + 2 ist eine Primzahl
 func NextPrimeTwin(n int) int {
-	// begin:hint
 	// Verwenden Sie eine for-Schleife, um n schrittweise zu erhöhen.
 	// Prüfen Sie in jedem Schleifendurchlauf, ob n und n+2 beide Primzahlen sind.
 	for n = NextPrime(n); !IsPrime(n + 2); n = NextPrime(n + 1) {
@@ -93,7 +92,6 @@ func GreatestPrimeBelow(n int) int {
 	if n <= 2 {
 		return 0
 	}
-	// begin:hint
 	// Verwenden Sie eine for-Schleife, um n schrittweise zu verringern,
 	// bis es eine Primzahl ist.
 	for ; !IsPrime(n); n-- {

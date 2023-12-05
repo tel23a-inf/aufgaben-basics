@@ -75,14 +75,6 @@ func CountEqualElements(list1, list2 []int) int {
 		}
 	}
 	return result
-	/**iftask:
-	for i := range list1 {
-		if list1[i] == list2[i] {
-			result++
-		}
-	}
-	return result
-	**/
 }
 
 // Erwartet zwei Listen.
