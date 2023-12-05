@@ -9,7 +9,6 @@ func ContainsChain(list []int) bool {
 		return false
 	}
 	counter := 1
-	// begin:hint
 	// Verwenden Sie eine for-Schleife, um die Elemente der Liste zu durchlaufen.
 	// Prüfen Sie in jedem Schleifendurchlauf, ob das aktuelle Element gleich dem
 	// vorherigen Element plus 1 ist.
@@ -18,8 +17,6 @@ func ContainsChain(list []int) bool {
 	// Wenn dabei counter >= 3 wird, geben Sie true zurück.
 	// Wenn Sie die Schleife durchlaufen haben, ohne eine Kette gefunden zu haben,
 	// geben Sie false zurück.
-	// end:hint
-	// begin:solution
 	for pos, el := range list[:len(list)-1] {
 		if el == list[pos+1]-1 {
 			counter++
@@ -30,6 +27,5 @@ func ContainsChain(list []int) bool {
 			return true
 		}
 	}
-	// end:solution
 	return false
 }

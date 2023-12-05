@@ -10,16 +10,12 @@ func FindPair(list []int, x int) int {
 		return -1
 	}
 
-	// begin:hint
 	// Gehen Sie ähnlich vor wie in der Funktion Find.
 	// Ändern Sie lediglich die Bedingung in der if-Anweisung.
-	// end:hint
-	// begin:solution
 	for pos, el := range list[:len(list)-1] {
 		if el == x && list[pos+1] == x {
 			return pos
 		}
 	}
-	// end:solution
 	return -1
 }

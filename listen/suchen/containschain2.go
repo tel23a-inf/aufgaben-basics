@@ -7,14 +7,11 @@ package suchen
 // Im Gegensatz zu `ContainsChain()` müssen die Zahlen
 // hier nicht direkt aufeinanderfolgen.
 func ContainsChain2(list []int) bool {
-	// begin:hint
 	// Diese Aufgabe ist fast identisch zu `ContainsChain()`.
 	// Der einzige Unterschied ist, dass die Zahlen nicht
 	// direkt aufeinanderfolgen müssen.
 	// D.h. Sie müssen nur die Bedingung aus `ContainsChain()`
 	// etwas abändern.
-	// end:hint
-	// begin:solution
 	if len(list) < 3 {
 		return false
 	}
@@ -29,6 +26,5 @@ func ContainsChain2(list []int) bool {
 			return true
 		}
 	}
-	// end:solution
 	return false
 }

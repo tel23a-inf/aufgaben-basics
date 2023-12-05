@@ -12,12 +12,9 @@ func Divides(m, n int) bool {
 	// Als Übungsaufgabe ersetzen Sie diese Lösung dennoch durch eine,
 	// die den Modulo-Operator nicht verwendet.
 
-	// begin:hint
 	// Verwenden Sie eine for-Schleife, um n schrittweise um m zu verringern.
 	// Wenn n dabei auf 0 kommt, ist m ein Teiler von n.
 	// Prüfen Sie vorher, ob m und n beide positiv sind und ändern Sie sie ggf. das Vorzeichen.
-	// end:hint
-	// begin:solution
 	if m == 0 {
 		return false
 	}
@@ -31,8 +28,6 @@ func Divides(m, n int) bool {
 		n -= m
 	}
 	return n == 0
-	// end:solution
-	// iftask: return n%m == 0
 }
 
 // Erwartet eine Zahl n.
@@ -41,35 +36,27 @@ func IsPrime(n int) bool {
 	if n <= 1 {
 		return false
 	}
-	// begin:hint
 	// Verwenden Sie eine for-Schleife, um alle Zahlen von 2 bis n-1 zu durchlaufen.
 	// Wenn eine dieser Zahlen n teilt, ist n keine Primzahl.
-	// end:hint
-	// begin:solution
 	for i := 2; i < n; i++ {
 		if Divides(i, n) {
 			return false
 		}
 	}
-	// end:solution
 	return true
 }
 
 // Erwartet eine Zahl n.
 // Gibt alle Primzahlen auf der Konsole aus, die kleiner als n sind.
 func PrintPrimes(n int) {
-	// begin:hint
 	// Verwenden Sie eine for-Schleife, um alle Zahlen von 2 bis n-1 zu durchlaufen.
 	// Prüfen Sie in jedem Schleifendurchlauf, ob die aktuelle Zahl eine Primzahl ist.
 	// Wenn ja, geben Sie sie aus.
-	// end:hint
-	// begin:solution
 	for i := 2; i < n; i++ {
 		if IsPrime(i) {
 			fmt.Println(i)
 		}
 	}
-	// end:solution
 }
 
 // Erwartet eine Zahl n.
@@ -77,14 +64,10 @@ func PrintPrimes(n int) {
 // Liefert n, falls n selbst eine Primzahl ist.
 func NextPrime(n int) int {
 	result := n
-	// begin:hint
 	// Verwenden Sie eine for-Schleife, um result so lange zu erhöhen, bis es eine Primzahl ist.
 	// Verwenden Sie die Funktion IsPrime, um zu prüfen, ob result eine Primzahl ist.
-	// end:hint
-	// begin:solution
 	for ; !IsPrime(result); result++ {
 	}
-	// end:solution
 	return result
 }
 
@@ -98,11 +81,8 @@ func NextPrimeTwin(n int) int {
 	// begin:hint
 	// Verwenden Sie eine for-Schleife, um n schrittweise zu erhöhen.
 	// Prüfen Sie in jedem Schleifendurchlauf, ob n und n+2 beide Primzahlen sind.
-	// end:hint
-	// begin:solution
 	for n = NextPrime(n); !IsPrime(n + 2); n = NextPrime(n + 1) {
 	}
-	// end:solution
 	return n
 }
 
@@ -116,10 +96,7 @@ func GreatestPrimeBelow(n int) int {
 	// begin:hint
 	// Verwenden Sie eine for-Schleife, um n schrittweise zu verringern,
 	// bis es eine Primzahl ist.
-	// end:hint
-	// begin:solution
 	for ; !IsPrime(n); n-- {
 	}
-	// end:solution
 	return n
 }

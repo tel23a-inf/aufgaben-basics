@@ -5,7 +5,6 @@ package suchen
 // Stelle eine Kette von drei Zahlen enthält,
 // deren Summe 42 ist.
 func ContainsSum(list []int) bool {
-	// begin:hint
 	if len(list) < 3 {
 		return false
 	}
@@ -15,8 +14,6 @@ func ContainsSum(list []int) bool {
 	// und ziehen das Element, das drei Positionen vor dem aktuellen Element steht,
 	// von der Summe ab.
 	// Wenn die Summe 42 ist, geben Sie true zurück.
-	// end:hint
-	// begin:solution
 	for pos, el := range list[3:] {
 		if counter == 42 {
 			return true
@@ -24,6 +21,5 @@ func ContainsSum(list []int) bool {
 		counter += el
 		counter -= list[pos]
 	}
-	// end:solution
 	return counter == 42
 }
