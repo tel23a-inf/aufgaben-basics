@@ -1,17 +1,17 @@
 package flaechen
 
+import "math"
+
 // Erwartet zwei Seitenlängen a und b.
 // Liefert die Fläche des entsprechenden Rechtecks.
 func AreaRectangle(a, b float64) float64 {
-	// TODO
-	return 0
+	return a * b
 }
 
 // Erwartet eine Seitenlänge a.
 // Liefert die Fläche des entsprechenden Quadrats.
 func AreaSquare(a float64) float64 {
-	// TODO
-	return 0
+	return AreaRectangle(a, a)
 }
 
 // Erwartet zwei Seitenlängen a und b.
@@ -24,22 +24,19 @@ func AreaRightTriangle(a, b float64) float64 {
 // Erwartet zwei Seitenlängen a und b.
 // Liefert den Umfang des entsprechenden Rechtecks.
 func PerimeterRectangle(a, b float64) float64 {
-	// TODO
-	return 0
+	return 2 * (a + b)
 }
 
 // Erwartet eine Seitenlänge a.
 // Liefert den Umfang des entsprechenden Quadrats.
 func PerimeterSquare(a float64) float64 {
-	// TODO
-	return 0
+	return 4 * a
 }
 
 // Erwartet die Längen der Katheten eines rechtwinkligen Dreiecks.
 // Liefert die Länge der Hypotenuse.
 func Hypotenuse(a, b float64) float64 {
-	// TODO
-	return 0
+	return math.Sqrt(a*a + b*b)
 }
 
 // Erwartet zwei Seitenlängen a und b.
