@@ -3,22 +3,19 @@ package flaechen
 // Erwartet zwei Seitenlängen a und b.
 // Liefert die Fläche des entsprechenden Rechtecks.
 func AreaRectangle(a, b float64) float64 {
-	// TODO
-	return 0
+	return a * b
 }
 
 // Erwartet eine Seitenlänge a.
 // Liefert die Fläche des entsprechenden Quadrats.
 func AreaSquare(a float64) float64 {
-	// TODO
-	return 0
+	return AreaRectangle(a, a)
 }
 
 // Erwartet zwei Seitenlängen a und b.
 // Liefert die Fläche eines rechtwinkligen Dreiecks, dessen Katheten a und b sind.
 func AreaRightTriangle(a, b float64) float64 {
-	// TODO
-	return 0
+	return a * b / 2
 }
 
 // Erwartet zwei Seitenlängen a und b.
